@@ -1,0 +1,240 @@
+.scheduleContainer {
+	grid-column: 1 / 11;
+	grid-row: 1 ;
+	width: 100%;
+	z-index: 10;
+	padding: 0.5%
+}
+.trainers {
+	display: inline-block;
+	width: 31%;
+	margin-left: 1%;
+	margin-top: 1%;
+	background-color: rgba(0, 94, 128, 0.7);
+	box-shadow: inset 0px 0px 6px 4px #00294e;
+	border-radius: 15px 15px 10px 10px;
+	color: #eeeeee;
+}
+
+.trainersGrid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(10px, auto);
+	padding: 10px;	
+}
+
+.trainersGrid div:nth-child(1) {
+	grid-column: 1 / 11;
+	grid-row: 1;
+}
+.trainersGrid div:nth-child(1) img {
+	max-width: 70%;
+	margin: 10% 15% 2% 15%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 5px #00294e;
+}
+
+.trainersGrid div:nth-child(2) {
+	grid-column: 1 / 6;
+	grid-row: 2;
+	font-size: 1.5vw;
+	text-align: end;
+	padding-right: 10px; 
+}
+.trainersGrid div:nth-child(3) {
+	grid-column: 6 / 11;
+	grid-row: 2;
+	font-size: 1.5vw;
+}
+.trainersGrid div:nth-child(4) {
+	grid-column: 1 / 11;
+	grid-row: 3;
+	margin-top: 2vw;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(142, 142, 142, 0.25);
+}
+
+.schedule {
+	display: inline-block;
+	width: 31%;
+	margin-top: 1%;
+	margin-left: 1%;
+	padding: 5px 0 0 5px;
+	border-radius: 10px;
+	color: #eeeeee;
+	background-color: rgba(0, 94, 128, 0.65);
+	cursor: pointer;
+	overflow: hidden;
+}
+.scheduleGrid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(10px, auto);
+}
+
+.scheduleGrid div:nth-child(1) {
+	grid-column: 1 / 5;
+	grid-row: 1 / 3;
+}
+
+.scheduleGrid div:nth-child(1) img {
+	max-width: 90%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 5px #00294e;
+}
+
+.scheduleGrid div:nth-child(2) {
+	grid-column: 5 / 8;
+	grid-row: 1;
+	text-align: end;
+	padding-top: 10px; 
+	padding-right: 10px; 
+	font-size: 1.5vw;
+}
+.scheduleGrid div:nth-child(3) {
+	grid-column: 8 / 11;
+	grid-row: 1;
+	font-size: 1.5vw;
+	padding-top: 10px; 
+}
+.scheduleGrid div:nth-child(4) {
+	grid-column: 5 / 11;
+	grid-row: 2;
+	text-align: center;
+	font-size: 1vw;
+}
+
+.scheduleFrame {
+	display: none;
+	position: fixed;
+    top: 5%;
+	left: 5%;
+	width: 90%;
+	background-color: #457b94;
+	border-radius: 15px 15px 0 0;
+	z-index: 100;
+	box-shadow: inset 0px 0px 4px 2px  #00124e;
+	color: #eeeeee;
+}
+.scheduleFrameGrid {
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	grid-gap: 0px;
+	grid-auto-rows: minmax(10px, auto);
+}
+.scheduleFrameGrid div:nth-child(1) {
+	grid-column: 5 / 11;
+	grid-row: 1 / 2;
+}
+.scheduleFrameGrid div:nth-child(1) img {
+	height: 50px;
+	cursor: pointer;
+	border-radius: 10px;
+	float: right;
+}
+.scheduleFrameGrid div:nth-child(1) img:hover {
+	background-color: #710000;
+	box-shadow: inset 0px 0px 4px 2px black;
+}
+.scheduleFrameGrid div:nth-child(2) {
+	grid-column: 2 / 4;
+	grid-row: 2 / 6;
+}
+.scheduleFrameGrid div:nth-child(2) img {
+	max-width: 70%;
+}
+.scheduleFrameGrid div:nth-child(3) {
+	grid-column: 1 / 11;
+	grid-row: 6 / 11;
+	margin: 10px 10px 10px 0;
+	padding: 5px;
+	background-color: rgba(111, 161, 179, 0.33);
+	text-align: center;
+}
+.scheduleFrameGrid div:nth-child(3) *{
+	float: right;
+}
+.scheduleFrameGrid div:nth-child(3) img {
+	max-height: 24vw;
+	padding-top: 1vw;
+	max-width: 100%;
+	float: right;
+}
+.scheduleFrameGrid div:nth-child(4) {
+	grid-column: 6 / 8;
+	grid-row: 2 / 6;
+	text-align: end;
+	padding-top: 20px;
+	padding-right: 20px;
+	font-size: 2vw;
+}
+.scheduleFrameGrid div:nth-child(5) {
+	grid-column: 8 / 11;
+	grid-row: 2 / 6;
+	padding-top: 20px;
+	font-size: 2vw;
+}
+.scheduleFrameGrid div:nth-child(6) {
+	grid-column: 1 / 7;
+	grid-row: 6 / 11;
+	padding: 5px;
+	margin: 10px 0 10px 10px;
+	background-color: rgba(111, 161, 179, 0.33);
+}
+@media only screen and (max-width:600px) { 
+	.scheduleContainer {
+		grid-column: 1 / 11;
+		grid-row: 1;
+		overflow: visible;
+		height: 100%;
+	}
+	.trainers {
+		width: 98%;
+	}
+	.trainersGrid div:nth-child(1) {
+		grid-column: 1 / 5;
+		grid-row: 1;
+	}
+	.trainersGrid div:nth-child(1) img {
+		max-width: 70%;
+		margin: 0;
+		border-radius: 10px;
+		box-shadow: 0px 0px 10px 5px #00294e;
+	}
+	
+	.trainersGrid div:nth-child(2) {
+		grid-column: 5 / 8;
+		grid-row: 1;
+		font-size: 3vw;
+		text-align: end;
+		padding-right: 10px; 
+	}
+	.trainersGrid div:nth-child(3) {
+		grid-column: 8 / 11;
+		grid-row: 1;
+		font-size: 3vw;
+	}
+	.trainersGrid div:nth-child(4) {
+		grid-column: 1 / 11;
+		grid-row: 2;
+		margin-top: 2vw;
+		padding: 10px;
+		border-radius: 10px;
+		background-color: #8e8e8e26;
+		font-size: 2vw;
+	}
+	.schedule {
+		width: 46%;
+	}
+	.scheduleFrame {
+		top: 10%;
+		left: 5%;
+		width: 90%;
+	}
+	.scheduleFrameGrid div:nth-child(1) img {
+		max-height: 7vw;
+	}
+}

@@ -1,0 +1,12 @@
+/admin/news_images
+/admin/video_images
+/admin/object_images
+/admin/galery_images
+/admin/error_log
+/admin/includes/db_includes.php
+/includes/Dbh.php
+/images
+error_log
+favicon.ico
+components/header/man.png
+components/header/woman.png

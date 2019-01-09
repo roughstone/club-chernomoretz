@@ -1,0 +1,9 @@
+footer {
+	height: 100px;
+	width: 100%;
+	overflow:auto;
+	color: white;
+	text-align: center;
+	background:linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(127, 5, 162, 0.5), rgba(81, 6, 103, 0.35), rgba(127, 5, 162, 0.5), rgba(0, 0, 0, 0.5)); 
+	margin-top: 1%;
+}

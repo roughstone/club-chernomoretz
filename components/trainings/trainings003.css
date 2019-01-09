@@ -1,0 +1,43 @@
+.trainingsContainer {
+	grid-column: 1 / 11;
+	grid-row: 1;
+	color: #eeeeee;
+	height: 33vw;
+}
+
+.trainings {
+	display: inline-block;
+	margin: 5% 10% 0 10%;
+	width: 80%;
+	padding: 30px;
+	background-color: rgba(0, 9, 39, 0.4); 
+	box-shadow: 9px 9px 14px 1px rgba(102,162,202,0.6);
+	
+}
+
+.trainings div {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: inline-block;
+	width: 13.3%;
+	text-align: center;
+	box-shadow: 3px 3px 5px 1px rgba(102,162,202,0.6);
+	margin-right: 0.5%;
+}
+.trainings h1 {
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width:1200px) { 
+	.trainings div {
+		width: 13%;
+	}
+}
+@media only screen and (max-width:600px) { 
+	.trainings div {
+		width: 80%;
+		margin-right: 0;
+	}
+	.trainingsContainer {
+		height: 100%;
+	}
+}
